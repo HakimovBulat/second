@@ -32,6 +32,7 @@
             button1 = new Button();
             checkBox1 = new CheckBox();
             label1 = new Label();
+            button2 = new Button();
             SuspendLayout();
             // 
             // button1
@@ -63,12 +64,23 @@
             label1.TabIndex = 2;
             label1.Text = "label1";
             // 
+            // button2
+            // 
+            button2.Location = new Point(243, 108);
+            button2.Name = "button2";
+            button2.Size = new Size(172, 89);
+            button2.TabIndex = 3;
+            button2.Text = "на 2 форму";
+            button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(11F, 22F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(128, 255, 255);
-            ClientSize = new Size(1339, 209);
+            ClientSize = new Size(438, 209);
+            Controls.Add(button2);
             Controls.Add(label1);
             Controls.Add(checkBox1);
             Controls.Add(button1);
@@ -87,5 +99,6 @@
         private Button button1;
         private CheckBox checkBox1;
         private Label label1;
+        private Button button2;
     }
 }
