@@ -46,8 +46,8 @@
             // 
             AutoScaleDimensions = new SizeF(11F, 22F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.FromArgb(255, 255, 128);
-            ClientSize = new Size(1100, 495);
+            BackColor = Color.FromArgb(255, 128, 0);
+            ClientSize = new Size(1390, 255);
             Controls.Add(button1);
             Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point, 204);
             Icon = (Icon)resources.GetObject("$this.Icon");
