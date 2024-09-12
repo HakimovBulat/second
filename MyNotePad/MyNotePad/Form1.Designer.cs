@@ -30,11 +30,13 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             button1 = new Button();
+            checkBox1 = new CheckBox();
+            label1 = new Label();
             SuspendLayout();
             // 
             // button1
             // 
-            button1.Location = new Point(279, 202);
+            button1.Location = new Point(99, 40);
             button1.Name = "button1";
             button1.Size = new Size(109, 41);
             button1.TabIndex = 0;
@@ -42,24 +44,48 @@
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
             // 
+            // checkBox1
+            // 
+            checkBox1.AutoSize = true;
+            checkBox1.Location = new Point(99, 98);
+            checkBox1.Name = "checkBox1";
+            checkBox1.Size = new Size(119, 26);
+            checkBox1.TabIndex = 1;
+            checkBox1.Text = "checkBox1";
+            checkBox1.UseVisualStyleBackColor = true;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(99, 151);
+            label1.Name = "label1";
+            label1.Size = new Size(60, 22);
+            label1.TabIndex = 2;
+            label1.Text = "label1";
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(11F, 22F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(255, 128, 0);
-            ClientSize = new Size(1390, 255);
+            ClientSize = new Size(310, 222);
+            Controls.Add(label1);
+            Controls.Add(checkBox1);
             Controls.Add(button1);
             Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point, 204);
             Icon = (Icon)resources.GetObject("$this.Icon");
             Margin = new Padding(4, 3, 4, 3);
             Name = "Form1";
-            Text = "Блокнот";
+            Text = "123";
             Load += Form1_Load;
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
 
         private Button button1;
+        private CheckBox checkBox1;
+        private Label label1;
     }
 }
